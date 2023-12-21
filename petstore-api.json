@@ -4135,7 +4135,7 @@
       }
     },
     "securitySchemes": {
-      "myBearer": {
+      "tokenBearer": {
         "type": "http",
         "scheme": "bearer",
         "bearerFormat": "JWT"
@@ -4144,7 +4144,7 @@
   },
   "security": [
     {
-      "myBearer": []
+      "tokenBearer": []
     }
   ]
 }

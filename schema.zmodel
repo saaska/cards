@@ -18,7 +18,7 @@ plugin openapi {
     description = 'My awesome pet store API'
     output = 'petstore-api.json'
     securitySchemes = { 
-        myBearer: { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }
+        tokenBearer: { type: 'http', scheme: 'bearer', bearerFormat: 'JWT' }
     }
 }
 
@@ -33,7 +33,6 @@ model User {
     // user profile is publicly readable
     @@allow('read', true)
 }
-
 
 model Pet {
     id String @id @default(cuid())
